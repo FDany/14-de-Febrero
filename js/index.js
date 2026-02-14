@@ -143,6 +143,7 @@ animate();
 // Esto asegura que el click funcione aunque le des al texto por error
 window.addEventListener('click', () => {
 
+    console.log(Date.now());
     const titulo = document.getElementById('title');
     const pista = document.getElementById('subtitle');
     
@@ -222,5 +223,6 @@ window.addEventListener('click', () => {
         }
     }
 });
+
 
 
