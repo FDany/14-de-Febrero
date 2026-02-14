@@ -1,0 +1,66 @@
+
+body {
+    margin: 0;
+    overflow: hidden;
+    background-color: #050002;
+    background: radial-gradient(circle at center, #1a000d 0%, #000000 100%);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+canvas {
+    display: block;
+}
+/*
+#instruction {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgba(255, 255, 255, 0.6);
+    pointer-events: none;
+    user-select: none;
+    font-size: 18px;
+    letter-spacing: 2px;
+    transition: opacity 1s;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+*/
+/* Contenedor principal centrado */
+#text-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    pointer-events: none; /* Crucial: permite que el click pase al canvas */
+    transition: opacity 1s ease; /* Para que se desvanezca suave */
+    z-index: 10;
+}
+
+/* Estilo del Título Romántico */
+#title {
+    font-family: 'Brush Script MT', 'Cursive', sans-serif; /* Fuente cursiva elegante */
+    font-size: 4rem; /* Tamaño grande */
+    color: #ff3366;  /* Color rosado intenso */
+    margin: 0;
+    text-shadow: 0 0 10px rgba(255, 51, 102, 0.5); /* Resplandor suave */
+}
+
+/* Estilo del Subtítulo (Haz click) */
+#subtitle {
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.7);
+    margin-top: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    animation: pulse 2s infinite; /* Pequeña animación de latido */
+}
+
+/* Animación opcional para el subtítulo */
+@keyframes pulse {
+    0% { opacity: 0.5; }
+    50% { opacity: 1; }
+    100% { opacity: 0.5; }
+}
+
