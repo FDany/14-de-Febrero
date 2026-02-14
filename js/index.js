@@ -158,8 +158,10 @@ window.addEventListener('click', () => {
 
         
         // ************************* CONDICION DE ARRANQUE DE LA ANIMACION ***************************
-        if ( Date.now() > new Date("2026-02-14T11:01:00").getTime() )
+        if ( Date.now() > new Date("2026-02-14T11:01:00").getTime() ){
             animationState = 'assembling';
+            console.log(Date.now);
+        }
         else{
             // const titulo = document.getElementById('title');
             // const pista = document.getElementById('subtitle');
@@ -219,3 +221,4 @@ window.addEventListener('click', () => {
         }
     }
 });
+
